@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Kontaktformular</title>
+  </head>
+  <body>
+
+    <!-- Überschrift -->
+    <h1>Ihre Meinung ist uns wichtig!</h1>
+    <!-- Beschreibung -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <form class="contact" action="contact.html" method="get">
+
+      <!-- Feld: Geschlecht -->
+      <fieldset style="margin-top: 10px; border: none;">
+        <h2 style="margin-top: 0px;">Geschlecht</h2>
+        <!--Variante A - ohne Label -->
+          <input type="radio" name="gender" value="male"> männlich
+        <!-- Variante B - Label + ID -->
+          <input type="radio" name="gender" value="female" id="gender-f">
+          <label for="gender-f">weiblich</label>
+        <!-- Variante B - Label + ID -->
+        <label>
+          <input type="radio" name="gender" value="other"> divers
+        </label>
+      </fieldset>
+      <!-- Feld: Vorname -->
+      <fieldset style="margin-top: 10px; border: none;">
+        <h2 style="margin-top: 0px;">Name</h2>
+        <label>
+          Vorname:
+        </label><br>
+        <input type="text" name="fname" placeholder="Max"><br>
+      <!-- Feld: Nachname -->
+        <label>
+          Nachname:
+        </label><br>
+        <input type="text" name="lname" placeholder="Musterman"><br>
+      </fieldset>
+
+      <!-- Feld: E-Mail-Adresse -->
+      <fieldset style="margin-top: 10px; border: none;">
+        <h2 style="margin-top: 0px;">Kontaktadressen</h2>
+        <label>
+          E-Mail:
+        </label><br>
+        <input type="email" name="email" placeholder="m.m@mymail.com"><br>
+
+      <!-- Feld: Telefon -->
+        <label>
+          Telefon:
+        </label><br>
+        <input type="tel" placeholder="+49432156789">
+      </fieldset>
+      <!-- Feld: Grund der Kontaktaufnahme -->
+      <fieldset style="margin-top: 10px; border: none;">
+        <label>
+          <h2 style="margin-top: 0px;">Grund</h2>
+        </label>
+        <select class="" name="reason">
+          <option value="none">Kein Grund</option>
+          <option value="complaint">Beschwerde</option>
+          <option value="mood">Schlecht gesch***</option>
+        </fieldset>
+
+        </select>
+      <!-- Feld: Text -->
+      <fieldset style="margin-top: 10px; padding-left: 0; border: none;">
+        <h2 style="margin-top: 0px;">Mitteilung</h2>
+        <label>
+          <textarea rows="4" cols="50" placeholder="Schreiben Sie uns hier Ihre Mitteilung."></textarea>
+        </label>
+      </fieldset>
+      <!-- Reset Button -->
+      <!-- Submit Button -->
+      <button type="submit">Absenden</button>
+
+    </form>
+
+  </body>
+</html>

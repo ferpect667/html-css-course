@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(209, 222, 236);
+}
+
+nav {
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(212, 95, 122, 0.22);
+  border-radius: 5px;
+}
+
+.sec_contact {
+  margin: 1em 0;
+}
+
+.sec_contact h4 {
+  color: #007bff;
+  text-shadow: 1px 1px grey;
+}
+
+.sec_contact .pers {
+  margin: 0;
+}
+
+.form-control {
+  margin: 0.2em 0;
+}
+
+/*Wieso geht das padding nicht?*/
+.shadow-lg.p-3.mb-5.bg-white.rounded {
+  padding-top: 0 !important;
+}
+
+.sidebar {
+  color: white;
+  text-shadow: 1px 1px grey;
+  margin-bottom: 48px;
+  padding-top: 16px;
+}

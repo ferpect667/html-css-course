@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>title</title>
+
+</head>
+
+
+<body>
+
+
+
+  <div class="container">
+    <!--
+    <nav class="row">
+      <div class="col-md-7 nav" id="nav-l">
+        <label for="Kontaktformular">
+          <h1>Kontaktformular</h1>
+        </label>
+      </div>
+      <div class=" container col-md-5 nav justify-content-around   align-items-center" id="nav-r">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Über uns</a>
+        <a href="#">Kontaktaufnahme</a>
+      </div>
+    </nav>
+-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-md-7 order-sm-2">
+
+        <form class="contact" action="success.html" method="get">
+          <div class="container shadow-lg p-3 mb-5 bg-white rounded">
+
+
+            <!-- Feld: Vorname -->
+            <!-- Die divs in dieser Sektion sind höher als die in den nachfolgenden Sektionen; warum?-->
+            <section class="sec_contact pers">
+              <h4>Angaben zu Ihrer Person</h4>
+
+              <fieldset>
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <label for="fname">
+                      Vorname:
+                    </label>
+
+                  </div>
+                  <!-- Die nachfolgende align-intems-center Anweisung funktioniert hier nicht, jedoch zuvor bei "Vorname", warum?-->
+                  <div class="col-md-8">
+                    <input type="text" class="form-control" name="fname" placeholder="Max"><br>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Feld: Nachname -->
+
+              <fieldset>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="lname">Nachname:</label>
+                  </div>
+                  <div class="col-md-8">
+                    <input type="text" class="form-control" name="lname" placeholder="Musterman"><br>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Feld: Geschlecht -->
+
+              <fieldset>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="gender">Geschlecht:</label>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="male">m</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="female">w</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                      <label class="form-check-label" for="divers">d</label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+            </section>
+
+
+            <!-- Feld: E-Mail-Adresse -->
+            <section class="sec_contact">
+              <h4>Ihre Kontaktdaten</h4>
+
+              <fieldset>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="email">
+                      E-Mail:
+                    </label>
+                  </div>
+                  <div class="col-md-8">
+                    <input type="email" class="form-control" name="email" placeholder="m.m@mymail.com">
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Feld: Telefon -->
+              <fieldset>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="telephone">
+                      Telefon:
+                    </label>
+                  </div>
+                  <div class="col-md-8">
+                    <input type="tel" class="form-control" placeholder="+49432156789">
+                  </div>
+                </div>
+              </fieldset>
+            </section>
+
+
+            <!-- Feld: Grund der Kontaktaufnahme -->
+            <section class="sec_contact">
+              <h4>Ihr Anliegen</h4>
+
+              <fieldset>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="reason">Grund:</label>
+                  </div>
+                  <div class="col-md-8">
+                    <select class="form-control" name="reason">
+                      <option value="none">Kein Grund</option>
+                      <option value="proposal">Anregung</option>
+                      <option value="complaint">Beschwerde</option>
+                      <option value="question">Frage</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+              <!-- Feld: Text -->
+              <fieldset>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="message">Mitteilung</label>
+                  </div>
+                  <div class="col-md-8">
+                    <textarea class="form-control" rows="4" placeholder="Ihre Mitteilung."></textarea>
+                  </div>
+                </div>
+              </fieldset>
+            </section>
+            <!-- Submit Button -->
+            <div class="row">
+              <div class="col align-self-end">
+                <button class="btn btn-primary col align-self-end" type="submit">Absenden</button>
+              </div>
+            </div>
+
+          </div>
+        </form>
+
+
+
+
+      </div>
+
+      <div class="col-md-5 order-sm-1 sidebar">
+
+        <!-- Überschrift -->
+        <h1>Ihre Meinung ist uns wichtig!</h1>
+        <!-- Beschreibung -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+</body>
+
+</html>
