@@ -1,13 +1,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  color: white;
   background-color: grey;
-}
-
-ul {
-  list-style-type: none;
-  width: 491.5px;
-  padding-left: 0px;
+  height: auto;
 }
 
 a {
@@ -15,8 +9,45 @@ a {
   text-decoration: none;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.text-mono {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace !important;
+}
+
+.white {
+  color: white;
+}
+
+.grey {
+  color: grey;
+}
+
+.black {
+  color: black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .flex-container {
   display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.wrap {
+  wrap: wrap;
 }
 
 .jc-c {
@@ -36,9 +67,8 @@ a {
 }
 
 .header {
-  width: 100%;
   background-color: #25282F;
-  width: 1248px;
+  max-width: 1248px;
   height: 56px;
   padding: 8px 16px;
   margin-top: 0;
@@ -50,6 +80,63 @@ a {
 
 .header__logo {
   width: 32px;
+}
+
+.nav-ul {
+  list-style-type: none;
+  width: 491.5px;
+  padding-left: 0px;
+}
+
+.nav-ul__sub {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.header__toplist {
+  display: inline-block;
+  padding-bottom: 16px;
+  margin-top: 16px;
+  color: white;
+}
+
+.nav-ul__sub lh {
+  display: block;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.nav-ul__sub a {
+  display: block;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.nav-ul__sub a:hover {
+  color: blue;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 254px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown__content {
+  display: block;
+  border-radius: 3px;
+  margin-left: -15px;
 }
 
 .search {
@@ -93,4 +180,20 @@ a {
 
 .btn--SignUp {
   border-radius: 3px;
+}
+
+.TEST {
+  width: 1246px;
+  background-color: red;
+  height: 56px;
+  padding: 8px 16px;
+  margin-top: 0;
+}
+
+.TEST2 {
+  width: 200px;
+  background-color: white;
+  height: 20px;
+  padding: 8px 16px;
+  margin-top: 0;
 }
