@@ -12,89 +12,91 @@
 </head>
 
 
-<body class="flex-container jc-c flex-col wrap">
+<body class="flex-container jc-c flex-col">
 
-  <div class="header flex-container ai-c jc-spbtw">
-    <nav class="header__left flex-container ai-c">
+  <header class="flex-container jc-c flex-col wrap center">
 
-      <img class="header__logo" src="./ressources/logo_github.svg" alt="github-logo">
+    <div class="header flex-container ai-c jc-spbtw">
+      <nav class="header__left flex-container ai-c">
 
-      <ul class="nav-ul flex-container jc-spa">
-        <div class="dropdown">
-          <li class="header__toplist">Why GitHub?</li>
-          <div class="dropdown__content">
-            <ul class="nav-ul__sub">
-              <li><a class="bold black" href="#">Features</a></li>
-              <li><a class="grey" href="#">Code review</a></li>
-              <li><a class="grey" href="#">Project management</a></li>
-              <li><a class="grey" href="#">Integtrations</a></li>
-              <li><a class="grey" href="#">Actions</a></li>
-              <li><a class="grey" href="#">Package registry</a></li>
-              <li><a class="grey" href="#">Security</a></li>
-              <li><a class="grey" href="#">Team management</a></li>
-              <li><a class="grey" href="#">Social Coding</a></li>
-              <li><a class="grey" href="#">Documentation</a></li>
-              <li><a class="grey" href="#">Code host</a></li>
-              <hr>
-              <li><a class="bold black" href="#">Customer stories</a></li>
-              <li><a class="bold black" href="#">Security</a></li>
-            </ul>
+        <img class="header__logo" src="./ressources/logo_github.svg" alt="github-logo">
+
+        <ul class="header__nav flex-container jc-spa">
+          <div class="dropdown">
+            <li class="header__nav__main">Why GitHub?</li>
+            <div class="dropdown__content">
+              <ul class="header__nav__main__sub-list">
+                <li><a class="header__nav__main__sub-list__element--emph" href="#">Features</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Code review</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Project management</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Integtrations</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Actions</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Package registry</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Security</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Team management</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Social Coding</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Documentation</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Code host</a></li>
+                <hr>
+                <li><a class="header__nav__main__sub-list__element--emph" href="#">Customer stories</a></li>
+                <li><a class="header__nav__main__sub-list__element--emph" href="#">Security</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <li class="header__toplist"> <a href="#">Enterprise </a></li>
-        <div class="dropdown">
-          <li class="header__toplist">Explore</li>
-          <div class="dropdown__content">
-            <ul class="nav-ul__sub">
-              <li><a class="bold black" href="#">Explore GitHub</a></li>
-              <hr>
-              <lh class="text-mono grey">Learn & contribute</lh>
-              <li><a class="grey" href="#">Topics</a></li>
-              <li><a class="grey" href="#">Collections</a></li>
-              <li><a class="grey" href="#">Trending</a></li>
-              <li><a class="grey" href="#">Learning Lab</a></li>
-              <li><a class="grey" href="#">Open source guides</a></li>
-              <hr>
-              <lh class="text-mono grey">Connect with others</lh>
-              <li><a class="grey" href="#">Events</a></li>
-              <li><a class="grey" href="#">Community forum</a></li>
-              <li><a class="grey" href="#">Git Hub Education</a></li>
-            </ul>
+          <li class="header__nav__main"> <a href="#">Enterprise </a></li>
+          <div class="dropdown">
+            <li class="header__nav__main">Explore</li>
+            <div class="dropdown__content">
+              <ul class="header__nav__main__sub-list">
+                <li><a class="header__nav__main__sub-list__element--emph" href="#">Explore GitHub</a></li>
+                <hr>
+                <lh class="header__nav__main__sub-list__heading">Learn & contribute</lh>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Topics</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Collections</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Trending</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Learning Lab</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Open source guides</a></li>
+                <hr>
+                <lh class="header__nav__main__sub-list__heading">Connect with others</lh>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Events</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Community forum</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Git Hub Education</a></li>
+              </ul>
+            </div>
+
           </div>
+          <li class="header__nav__main"> <a href="#">Marketplace </a></li>
+          <div class="dropdown">
+            <li class="header__nav__main">Pricing</li>
+            <div class="dropdown__content">
+              <ul class="header__nav__main__sub-list">
+                <li><a class="header__nav__main__sub-list__element--emph" href="#">Plans</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Compare plans</a></li>
+                <li><a class="header__nav__main__sub-list__element--reg" href="#">Contact sales</a></li>
+                <hr>
+                <li><a class="header__nav__main__sub-list__element--emph" href="#">Nonprofit</a></li>
+                <li><a class="header__nav__main__sub-list__element--emph" href="#">Eductaion</a></li>
+              </ul>
+            </div>
+        </ul>
+      </nav>
 
-        </div>
-        <li class="header__toplist"> <a href="#">Marketplace </a></li>
-        <div class="dropdown">
-          <li class="header__toplist">Pricing</li>
-          <div class="dropdown__content">
-            <ul class="nav-ul__sub">
-              <li><a class="bold black" href="#">Plans</a></li>
-              <li><a class="grey" href="#">Compare plans</a></li>
-              <li><a class="grey" href="#">Contact sales</a></li>
-              <hr>
-              <li><a class="bold black" href="#">Nonprofit</a></li>
-              <li><a class="bold black" href="#">Eductaion</a></li>
-            </ul>
-          </div>
-      </ul>
-    </nav>
-
-    <div class="header__right flex-container ai-c">
-      <label class="search flex-container ai-c" for="search">
-        <input class="search__field" type="text" placeholder="Search GitHub">
-        <img class="search__key" src="./ressources/search-key-slash.svg" alt="search-key-slash">
-      </label>
-      <button class="btn btn--SignIn" type="button" name="SignIn">Sign in</button>
-      <button class="btn btn--SignUp" type="button" name="SignUp">Sign up</button>
-    </div>
-
-
-    <div class="TEST">
-      <div class="TEST2 ">
-
+      <div class="header__right flex-container ai-c">
+        <label class="search flex-container ai-c" for="search">
+          <input class="search__field" type="text" placeholder="Search GitHub">
+          <img class="search__key" src="./ressources/search-key-slash.svg" alt="search-key-slash">
+        </label>
+        <button class="btn btn--SignIn" type="button" name="SignIn">Sign in</button>
+        <button class="btn btn--SignUp" type="button" name="SignUp">Sign up</button>
       </div>
-
     </div>
+  </header>
+
+  <div class="TEST center">
+
+  </div>
+
+
 
 
 

@@ -1,7 +1,11 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   background-color: grey;
-  height: auto;
+  width: 100%;
+}
+
+header {
+  width: auto;
 }
 
 a {
@@ -18,24 +22,9 @@ hr {
   padding: 0;
 }
 
-.text-mono {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace !important;
-}
-
-.white {
-  color: white;
-}
-
-.grey {
-  color: grey;
-}
-
-.black {
-  color: black;
-}
-
-.bold {
-  font-weight: bold;
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex-container {
@@ -51,7 +40,7 @@ hr {
 }
 
 .jc-c {
-  justify-content: center;
+  jjustify-content: flex-end;
 }
 
 .jc-spbtw {
@@ -68,7 +57,6 @@ hr {
 
 .header {
   background-color: #25282F;
-  max-width: 1248px;
   height: 56px;
   padding: 8px 16px;
   margin-top: 0;
@@ -82,41 +70,61 @@ hr {
   width: 32px;
 }
 
-.nav-ul {
+.header__nav {
   list-style-type: none;
   width: 491.5px;
   padding-left: 0px;
 }
 
-.nav-ul__sub {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.header__toplist {
+.header__nav__main {
   display: inline-block;
   padding-bottom: 16px;
   margin-top: 16px;
   color: white;
 }
 
-.nav-ul__sub lh {
-  display: block;
-  font-size: 14px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+.header__nav__main__sub-list {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-.nav-ul__sub a {
-  display: block;
-  font-size: 14px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.nav-ul__sub a:hover {
+.header__nav__main__sub-list a:hover {
   color: blue;
 }
+
+.header__nav__main__sub-list li {
+  display: block;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header__nav__main__sub-list__element--emph {
+  color: black;
+  font-weight: bold;
+}
+
+.header__nav__main__sub-list__element--reg {
+  color: grey;
+}
+
+.header__nav__main__sub-list__heading {
+  display: block;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace !important;
+  font-size: 14px;
+  color: grey;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header__nav__main__sub-list lh {
+  display: block;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header__nav__main__sub a:hover {}
 
 .dropdown {
   position: relative;
@@ -183,17 +191,9 @@ hr {
 }
 
 .TEST {
-  width: 1246px;
+  width: 1248px;
   background-color: red;
   height: 56px;
-  padding: 8px 16px;
-  margin-top: 0;
-}
-
-.TEST2 {
-  width: 200px;
-  background-color: white;
-  height: 20px;
   padding: 8px 16px;
   margin-top: 0;
 }
